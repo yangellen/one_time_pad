@@ -10,11 +10,13 @@ keygen keyLength
 
 keyLength: the length of the kiey file in characters
 
+
 **otp_d.c**
 This program run in the background as a daemon. The program functions to store the encrypted data and support up to five concurrent socket connections running at the same time.
 
 syntax for otp_d:
 otp_d listening_port
+
 
 **otp.c**
 This program connects to otp_d and asks it to store or retrieve messags for a given user. It has two modes: ost and get.
@@ -41,6 +43,7 @@ key: contains the decryption key to use to decrypt the retrieved ciphertext.
 port: the port that otp shuould attempt to connect to otp_d on.
 
 **To compile the files:**
+
 gcc -o keygen keygen.c
 gcc -o otp otp.c
 gcc -o otp_d otp_d.c
