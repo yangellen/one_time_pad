@@ -47,6 +47,6 @@ port: the port that otp shuould attempt to connect to otp_d on.
 
 ## To compile the files:
 
-gcc -o keygen keygen.c
-gcc -o otp otp.c
-gcc -o otp_d otp_d.c
+    gcc -o keygen keygen.c
+    gcc -o otp otp.c
+    gcc -o otp_d otp_d.c
